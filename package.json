@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "private": false,
   "module": "dist/index.mjs",
   "files": [
     "dist"
@@ -13,7 +14,7 @@
     "lint": "biome ci ./src",
     "test:ci": "vitest run",
     "test": "vitest --coverage",
-    "build": "vitest run && tsup src/index.ts --dts --format esm"
+    "build": "vitest run && tsup src/index.ts --dts --format esm,cjs"
   },
   "keywords": [],
   "author": "Evan Kysley",
